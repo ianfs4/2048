@@ -1,0 +1,22 @@
+Performing C++ SOURCE FILE Test LDFLAG_FSANITIZE_UNDEFINED_OKAY failed with the following output:
+Change Dir: C:/Users/ifsla/Desktop/NU/CS 211/final_project_redo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yckpp2
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_2b396/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2b396.dir\build.make CMakeFiles/cmTC_2b396.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/ifsla/Desktop/NU/CS 211/final_project_redo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yckpp2'
+Building CXX object CMakeFiles/cmTC_2b396.dir/src.cxx.obj
+C:\MinGW\bin\c++.exe -DLDFLAG_FSANITIZE_UNDEFINED_OKAY  -fsanitize=undefined  -fdiagnostics-color=always -o CMakeFiles\cmTC_2b396.dir\src.cxx.obj -c "C:\Users\ifsla\Desktop\NU\CS 211\final_project_redo\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-yckpp2\src.cxx"
+Linking CXX executable cmTC_2b396.exe
+"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2b396.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2023.1.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_2b396.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_2b396.dir/objects.a @CMakeFiles\cmTC_2b396.dir\objects1
+C:\MinGW\bin\c++.exe  -fsanitize=undefined  -Wl,--whole-archive CMakeFiles\cmTC_2b396.dir/objects.a -Wl,--no-whole-archive -o cmTC_2b396.exe -Wl,--out-implib,libcmTC_2b396.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2b396.dir\linkLibs.rsp
+C:/MinGW/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/bin/ld.exe: cannot find -lubsan
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2b396.dir\build.make:100: cmTC_2b396.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/ifsla/Desktop/NU/CS 211/final_project_redo/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yckpp2'
+mingw32-make.exe: *** [Makefile:126: cmTC_2b396/fast] Error 2
+
+
+Source file was:
+int main(){}
+
